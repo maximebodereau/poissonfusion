@@ -1,0 +1,26 @@
+{
+  "runtime_ms_median": 139.06375000000003,
+  "repeat": 5,
+  "solver": {
+    "roi": {
+      "x": 279,
+      "y": 83,
+      "width": 203,
+      "height": 296
+    },
+    "domain_pixels": 43942,
+    "boundary_pixels": 830,
+    "unknowns": 43112,
+    "iterations": [
+      32,
+      32,
+      32
+    ],
+    "relative_residual": [
+      0.0000082261395,
+      0.000008193132,
+      0.000008202929
+    ],
+    "screening": 0.25
+  }
+}

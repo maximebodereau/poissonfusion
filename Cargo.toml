@@ -1,0 +1,31 @@
+[package]
+name = "poissonfusion"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Identity-preserving screened-harmonic image compositing"
+readme = "README.md"
+repository = "https://github.com/maximebodereau/poissonfusion"
+keywords = ["image-compositing", "poisson", "computer-vision", "graphics"]
+categories = ["multimedia::images", "science"]
+
+[lib]
+name = "poissonfusion"
+path = "src/lib.rs"
+
+[[bin]]
+name = "poissonfusion"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+approx = "0.5"
+
+[profile.release]
+lto = false
+codegen-units = 8
